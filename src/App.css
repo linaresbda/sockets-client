@@ -1,22 +1,80 @@
-.App {
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+
+hr{
+  display: block;
+  margin-top: 30px;
+  border: 1px solid #3a5f6f;
+}
+
+.form-landing {
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.div-form-button {
+  margin-top: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button {
+  background-color: #3a5f6f;
+  border: none;
   color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  border-radius: 3px;
+  width: 50%;
 }
 
-.App-link {
-  color: #09d3ac;
+.button-secondary{
+  margin-top: 15px;
+  display: block;
+  margin-left: 25%;
+}
+
+@media (min-width: 400px) {
+  input[type="email"],
+  input[type="text"],
+  select {
+    width: 340px;
+  }
+
+  .div-form-button {
+    width: 340px;
+  }
+
+  .form-landing {
+    margin: auto;
+    margin-top: 10%;
+    width: 340px;
+    border: 1px solid #3a5f6f;
+    border-radius: 5px;
+  }
+  
+  hr{
+    display: none;
+  }
 }
