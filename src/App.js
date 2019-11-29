@@ -13,7 +13,7 @@ function App() {
       <hr className="hr-visible" />
       {/* List Messages */}
       <label htmlFor="messages">Messages</label>
-      <textarea disabled="true" readOnly name="messages" />
+      <textarea disabled={true} readOnly name="messages" />
       <hr className="hr-visible" />
       {/* Message */}
       <label htmlFor="inp-message">Message</label>
