@@ -4,11 +4,12 @@ import io from 'socket.io-client';
 
 function App() {
   let socket;
-
+  let urlServer = 'http://192.168.15.13:80';
+  
   function handleNewConnection() {
     if (!socket || socket.connected === false) {
       console.log('new connection');
-      socket = io('http://192.168.15.13:80', { query: `user=${document.getElementById('inp-nickname').value}` });
+      socket = io(urlServer, { query: `user=${document.getElementById('inp-nickname').value}` });
       listenerSocket();
     }
   }

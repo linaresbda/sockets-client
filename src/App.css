@@ -77,13 +77,6 @@ hr {
   width: 50%;
 }
 
-/* Estilo para centrar un boton bajo otro */
-/* .button-secondary{
-  margin-top: 15px;
-  display: block;
-  margin-left: 25%;
-} */
-
 @media (min-width: 420px) {
   input[type="email"],
   input[type="text"],
