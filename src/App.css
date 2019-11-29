@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+.note{
+  font-size: small;
+  color: #808080;
+}
+
 input[type="text"],
 input[type="email"],
 select {
@@ -15,18 +20,37 @@ select {
   box-sizing: border-box;
 }
 
-p{
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+textarea:focus {
+  border: 1px solid #ccc;
+}
+
+p {
   margin: 0;
 }
 
-hr{
+hr {
   display: block;
   margin-top: 30px;
   border: 1px solid #3a5f6f;
 }
 
+.hr-visible {
+  display: block;
+  margin-bottom: 30px;
+}
+
 .form-landing {
-  margin-top: 30px;
   padding: 30px;
 }
 
@@ -49,11 +73,12 @@ hr{
   width: 50%;
 }
 
-.button-secondary{
+/* Estilo para centrar un boton bajo otro */
+/* .button-secondary{
   margin-top: 15px;
   display: block;
   margin-left: 25%;
-}
+} */
 
 @media (min-width: 400px) {
   input[type="email"],
@@ -73,8 +98,8 @@ hr{
     border: 1px solid #3a5f6f;
     border-radius: 5px;
   }
-  
-  hr{
+
+  hr {
     display: none;
   }
 }
